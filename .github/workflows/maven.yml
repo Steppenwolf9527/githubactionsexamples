@@ -48,7 +48,6 @@ jobs:
           host: ${{ secrets.HUAWEI_HOST }}
           username: ${{ secrets.HUAWEI_USERNAME }}
           password: ${{ secrets.HUAWEI_PWD }}
-          port: ${{ secrets.HUAWEI_USERNAME }}
           script: |
             ${{ secrets.HUAWEI_DOCKERLOGIN }}
             docker stop $(docker ps --filter ancestor=${{ secrets.HUAWEI_DOCKERREPOSITORY }} -q)
