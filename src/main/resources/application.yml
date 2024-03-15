@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: 'jdbc:mysql://118.89.91.246:3304/2021213082'
+    username: root
+    password: 123456b
+  sql:
+    init:
+      mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+
+logging:
+  level:
+    sql: debug
+    com:
+      example: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'
+server:
+  port: 8081
+
