@@ -32,7 +32,7 @@ jobs:
     - name: docker push
       run: |
         ${{ secrets.HUAWEI_DOCKERLOGIN }}
-        docker build -t ${{ secrets.HUAWEI_DOCKERREPOSITORY }}
+        docker build . -t ${{ secrets.HUAWEI_DOCKERREPOSITORY }}
         docker push ${{ secrets.HUAWEI_DOCKERREPOSITORY }}
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
