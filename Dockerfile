@@ -5,5 +5,5 @@ FROM openjdk:17
 COPY ./target/*.jar /home/githubactions.jar
 
 # 设置 /home/githubactions.jar 为镜像的入口点
-ENTRYPOINT java, -jar, /home/githubactions.jar
+ENTRYPOINT java -jar /home/githubactions.jar
 
