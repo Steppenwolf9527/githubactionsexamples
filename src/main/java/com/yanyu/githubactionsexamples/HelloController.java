@@ -14,7 +14,7 @@ public class HelloController {
 
     @GetMapping("hello")
     public String hello() {
-        return Map.of("name", "yanyu1", "age", 18).toString();
+        return Map.of("name", "yanyu2", "age", 18).toString();
     }
 
 }
